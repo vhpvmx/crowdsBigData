@@ -1,0 +1,17 @@
+comando para concatenar todos los archivos:
+
+cat *.czml >> join.czml
+
+sobre el archivo join.czml ejecutas este comando en vi para reemplazar los corchetes por una coma:
+
+:1,$s/\]\[/,/g
+
+pegas el encabezado al inicio:
+[
+  {
+    "id" : "document",
+    "name" : "CZML Point",
+    "version" : "1.0"
+  },
+
+Y listo lo cargas en cesium
