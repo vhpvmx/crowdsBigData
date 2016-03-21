@@ -44,7 +44,7 @@ function UserToCZML(user) {
 
     var agents = [];
 
-    for(var i=0; i < 2; i++) {
+    for(var i=0; i < user.trayectories.length; i++) {
 
         var agent = CZMLAgent();
         var trayectory = user.trayectories[i];
